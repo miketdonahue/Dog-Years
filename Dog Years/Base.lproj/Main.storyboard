@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dog_Years" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your dog's age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itD-fT-GWK">
+                                <rect key="frame" x="16" y="108" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="f3Q-R9-Qjc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zjZ-de-tel">
+                                <rect key="frame" x="252" y="171" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L3y-0P-vlR"/>
+                                    <constraint firstAttribute="width" constant="97" id="ity-kO-xJX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bq0-cl-FnJ">
+                                <rect key="frame" x="252" y="230" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GiQ-Rl-vZg"/>
+                                </constraints>
+                                <state key="normal" title="Find Age">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rih-13-4Dp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBE-Xi-VCv">
+                                <rect key="frame" x="16" y="281" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="akQ-eN-fdj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="koX-ok-XFX">
+                                <rect key="frame" x="253" y="359" width="94" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="iss-9X-hm1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7e-tR-eIW">
+                                <rect key="frame" x="236" y="38" width="129" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="C2H-X5-DAl"/>
+                                    <constraint firstAttribute="height" constant="39" id="YWW-Wg-tRZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="koX-ok-XFX" firstAttribute="top" secondItem="lBE-Xi-VCv" secondAttribute="bottom" constant="57" id="CDz-dQ-DyY"/>
+                            <constraint firstItem="itD-fT-GWK" firstAttribute="top" secondItem="B7e-tR-eIW" secondAttribute="bottom" constant="31" id="Fgx-9s-dVC"/>
+                            <constraint firstItem="zjZ-de-tel" firstAttribute="trailing" secondItem="Bq0-cl-FnJ" secondAttribute="trailing" id="N6p-wU-lC0"/>
+                            <constraint firstItem="itD-fT-GWK" firstAttribute="trailing" secondItem="lBE-Xi-VCv" secondAttribute="trailing" id="Ve5-RC-vAP"/>
+                            <constraint firstItem="itD-fT-GWK" firstAttribute="leading" secondItem="lBE-Xi-VCv" secondAttribute="leading" id="YPq-0c-GYd"/>
+                            <constraint firstItem="lBE-Xi-VCv" firstAttribute="centerX" secondItem="Bq0-cl-FnJ" secondAttribute="centerX" id="Yaf-jp-nY4"/>
+                            <constraint firstItem="itD-fT-GWK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="huy-Cg-esf"/>
+                            <constraint firstItem="itD-fT-GWK" firstAttribute="centerX" secondItem="B7e-tR-eIW" secondAttribute="centerX" id="jGX-nA-KUc"/>
+                            <constraint firstItem="B7e-tR-eIW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="kag-oK-KT3"/>
+                            <constraint firstItem="zjZ-de-tel" firstAttribute="top" secondItem="itD-fT-GWK" secondAttribute="bottom" constant="42" id="mrj-2N-BfZ"/>
+                            <constraint firstItem="zjZ-de-tel" firstAttribute="leading" secondItem="Bq0-cl-FnJ" secondAttribute="leading" id="pii-a9-oUp"/>
+                            <constraint firstItem="Bq0-cl-FnJ" firstAttribute="top" secondItem="zjZ-de-tel" secondAttribute="bottom" constant="29" id="rYP-S3-PUA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="koX-ok-XFX" secondAttribute="bottom" constant="94" id="u6e-l7-Iy3"/>
+                            <constraint firstItem="itD-fT-GWK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vOU-p0-vaj"/>
+                            <constraint firstItem="lBE-Xi-VCv" firstAttribute="top" secondItem="Bq0-cl-FnJ" secondAttribute="bottom" constant="21" id="wbd-0d-Ul6"/>
+                            <constraint firstItem="lBE-Xi-VCv" firstAttribute="centerX" secondItem="koX-ok-XFX" secondAttribute="centerX" id="yJc-iz-ryl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageInput" destination="zjZ-de-tel" id="cvC-CW-UZp"/>
+                        <outlet property="displayAge" destination="lBE-Xi-VCv" id="G6R-is-1dF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog.png" width="477" height="640"/>
+    </resources>
+</document>
